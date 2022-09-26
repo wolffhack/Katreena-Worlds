@@ -7,7 +7,7 @@ import Balance from "../components/Balance";
 import Transactions from "../components/Transactions";
 import NFT from "../components/NFT";
 import Send from "../components/Send";
-import MintNFT from "../components/MintNFTs";
+import MintNFT from "../components/MintNFT";
 import AuthPage from "../components/AuthPage";
 
 
