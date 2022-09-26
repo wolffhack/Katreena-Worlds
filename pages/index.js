@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>k3na</title>
+        <title>katreena</title>
       </Head>
       <Flex 
         direction="column" 
