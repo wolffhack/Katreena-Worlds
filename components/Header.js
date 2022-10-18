@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from '@chakra-ui/react'
 import { Flex, Center, Text, Button } from "@chakra-ui/react";
 
 export default function Header({ user, logout, isLoggingOut }) {
@@ -23,9 +23,13 @@ export default function Header({ user, logout, isLoggingOut }) {
           </Text>
         </Center>
         <Center>
-          <Link href="https://ar-nft.app/" isExternal>
-            <Button>Play Katreena-Worlds</Button>
-          </Link>
+          
+
+          <Button as='a' target='_blank' variant='outline' href='https://ar-nft.app/'>
+              Play Katreena Lands
+            </Button>
+            
+          
         </Center>
         <Center>
           <Text>{user.getUsername()}</Text>
