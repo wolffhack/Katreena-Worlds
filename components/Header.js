@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from '@chakra-ui/react'
-import { Flex, Center, Text, Button } from "@chakra-ui/react";
+import { Flex, Center, Text, Button, Image } from "@chakra-ui/react";
+import logo from "./../public/faviconKN.png"
 
 export default function Header({ user, logout, isLoggingOut }) {
   // const navigate = useNavigate();
@@ -14,13 +15,14 @@ export default function Header({ user, logout, isLoggingOut }) {
         px="10"
         py="6"
         justifyContent="space-between"
-        bgGradient="Linear(to-br, teal.400, #6200ee)"
+        bgGradient="Linear(to-br, #000000, #000000)"
         color="white"
       >
         <Center>
-          <Text color="white" fontSize="xl" fontWeight="bold">
+          <Image src={logo} alt="katrenaLogo" />
+          {/* <Text color="white" fontSize="xl" fontWeight="bold">
             Katreena
-          </Text>
+          </Text> */}
         </Center>
         <Center>
           

@@ -52,7 +52,7 @@ export default function Home() {
         />
         <Box 
           flex="1" 
-          bgGradient="Linear(to-br, teal.400, purple)" 
+          bgGradient="Linear(to-br, #5d2080, #3a154f)" 
           px="44" 
           py="20"
         >
