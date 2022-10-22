@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from '@chakra-ui/react'
 import { Flex, Center, Text, Button, Image } from "@chakra-ui/react";
-import logo from "./../public/faviconKN.png"
 
 export default function Header({ user, logout, isLoggingOut }) {
   // const navigate = useNavigate();
@@ -28,7 +26,7 @@ export default function Header({ user, logout, isLoggingOut }) {
           
 
           <Button as='a' target='_blank' variant='outline' href='https://ar-nft.app/'>
-              Play Katreena Lands
+              Play Katreena Worlds
             </Button>
             
           
