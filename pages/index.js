@@ -9,6 +9,7 @@ import NFT from "../components/NFT";
 import Send from "../components/Send";
 import MintNFT from "../components/MintNFT";
 import AuthPage from "../components/AuthPage";
+import NGO from "../components/NGO";
 
 
 export default function Home() {
@@ -76,7 +77,8 @@ export default function Home() {
             </TabList>
             <TabPanels p='2rem'>
               <TabPanel>
-                <Profile user={user}/>
+                {/* <Profile user={user}/> */}
+                <NGO></NGO>
               </TabPanel>
               <TabPanel>
                 <Balance user={user}/>
