@@ -1,6 +1,7 @@
 import { Flex, Button, Text, Box} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
+import Nav from "./menuLanding"
 // import '@google/model-viewer';
 
 
@@ -12,13 +13,10 @@ export default function AuthPage({metamaskAuth}) {
 
       </title>
       </Head>
-      <Flex>
-        <link>Home</link>
-        <link>Home</link>
-        <link>Home</link>
-        <link>Home</link>
-        <link>Home</link>
-      </Flex>
+      <Nav />
+      <div className="navLanding">
+        <a href="www.google.com">LINK GOOGLE</a>
+      </div>
       <Flex 
       direction="column" 
       justifyContent="center" 

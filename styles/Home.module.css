@@ -72,6 +72,9 @@
   flex-wrap: wrap;
   max-width: 800px;
 }
+.navLand2{
+  background-color: #0070f3;
+}
 
 .card {
   margin: 1rem;
