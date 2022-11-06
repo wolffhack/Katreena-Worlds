@@ -64,7 +64,7 @@ export default function Home() {
             align="center" 
             variant="soft-rounded" 
             isFitted="true"
-            colorScheme = "purple"
+            // colorScheme = "purple"
           >
             <TabList>
               <Tab fontWeight="bold">Profile</Tab>

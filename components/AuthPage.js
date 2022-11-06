@@ -1,4 +1,4 @@
-import { Flex, Button, Text, Box} from "@chakra-ui/react";
+import { Flex, Button, Text, Box, Link, Spacer} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 // import '@google/model-viewer';
@@ -13,20 +13,24 @@ export default function AuthPage({metamaskAuth}) {
       </title>
       </Head>
       <Flex>
-        <link>Home</link>
-        <link>Home</link>
-        <link>Home</link>
-        <link>Home</link>
-        <link>Home</link>
+        
       </Flex>
       <Flex 
-      direction="column" 
-      justifyContent="center" 
+      // direction="column" 
+      justifyContent="space-between" 
       alignItems="center"
-      width="100vw"
-      height="100vh"
+      width="100%"
+      height="10vh"
       bgColor="black"
       >
+        <Flex color="white" justify="space-between">
+        <Link href='' isExternal="false">Home</Link>
+        <Spacer></Spacer>
+        <Link>Home</Link>
+        <Link>Home</Link>
+        <Link>Home</Link>
+        <Link>Home</Link>
+        </Flex>
           <Text 
               fontSize="5xl" 
               fontWeight="bold"
@@ -40,7 +44,8 @@ export default function AuthPage({metamaskAuth}) {
               onClick={metamaskAuth}
           >Login with Metamask</Button>
       </Flex>  
-      <Box>
+      <Box h="90vh" bgColor="blue" color="white" textAlign="center" >
+        <Text >Create AR NFT's, Trade & Save the planet</Text>
       {/* <model-viewer
         src="katreena.glb"
          ios-src=""
@@ -51,6 +56,8 @@ export default function AuthPage({metamaskAuth}) {
         auto-rotate
     ar
   ></model-viewer>     */}
-    </Box>           
+    </Box> 
+    <Flex h="10vh" bgColor="red" color="white">
+      Footer</Flex>          
   </>
   )}
