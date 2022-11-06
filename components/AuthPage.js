@@ -1,6 +1,7 @@
 import { Flex, Button, Text, Box, Link, Spacer, Container, Heading} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
+import NGO from "./NGO";
 // import '@google/model-viewer';
 
 
@@ -73,6 +74,7 @@ export default function AuthPage({metamaskAuth}) {
         
      
     </Flex> 
+    <NGO></NGO>
     <Flex h="10vh" bgColor="red" color="white">
       Footer</Flex>          
   </>
