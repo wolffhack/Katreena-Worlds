@@ -10,7 +10,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import React from "react";
-import modelViewer from "@google/model-viewer";
+import "@google/model-viewer";
 
 export default function NGO() {
   return (
@@ -87,7 +87,16 @@ export default function NGO() {
             w="20vh"
             ml="10"
           >
-            <modelViewer src=""/>
+            <model-viewer
+              src="katreena.glb"
+              alt="arbol"
+              ar
+             
+              poster="shared-assets/models/NeilArmstrong.webp"
+              shadow-intensity="1"
+              camera-controls
+              touch-action="pan-y"
+            />
           </Flex>
         </Container>
       </Flex>
