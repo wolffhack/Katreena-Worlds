@@ -18,9 +18,9 @@ export default function Header({ user, logout, isLoggingOut }) {
       >
         <Center>
           <Image src="faviconKN.png" alt="katrenaLogo" />
-          {/* <Text color="white" fontSize="xl" fontWeight="bold">
+          <Text color="white" fontSize="xl" fontWeight="bold" margin="12px">
             Katreena
-          </Text> */}
+          </Text>
         </Center>
         <Center>
           
