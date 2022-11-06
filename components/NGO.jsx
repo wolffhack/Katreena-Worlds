@@ -19,14 +19,14 @@ export default function NGO() {
       color="white"
       align="center"
       justify="center"
-      bgColor="orange"
+      bgGradient="Linear(to-br, #5d2080, #3a154f)" 
     >
-      <Flex direction="column" bgColor="blue" m="2" w="50%">
+      <Flex direction="column" m="2" w="50%">
         <Flex
           justify="center"
           alignItems="center"
           h="15vh"
-          bgColor="green"
+   
           borderBottomRadius="10"
           direction="column"
           w="100%"
