@@ -1,4 +1,4 @@
-import { Flex, Button, Text, Box, Link, Spacer} from "@chakra-ui/react";
+import { Flex, Button, Text, Box, Link, Spacer, Container, Heading} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 // import '@google/model-viewer';
@@ -44,9 +44,9 @@ export default function AuthPage({metamaskAuth}) {
               onClick={metamaskAuth}
           >Login with Metamask</Button>
       </Flex>  
-      <Box h="90vh" bgColor="blue" color="white" textAlign="center" >
-        <Text >Create AR NFT's, Trade & Save the planet</Text>
-      {/* <model-viewer
+      <Flex h="90vh" bgColor="blue" color="white" textAlign="center" >
+        <Container >
+           {/* <model-viewer
         src="katreena.glb"
          ios-src=""
          poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
@@ -56,7 +56,20 @@ export default function AuthPage({metamaskAuth}) {
         auto-rotate
     ar
   ></model-viewer>     */}
-    </Box> 
+        </Container >
+        
+        <Flex h="100%" align="center" justify="center" direction="column" bgColor="red">
+        <Heading>Discover the unique digital art of 3D AR NFT's</Heading>
+        <Text>Digital marketplace for crypto collectibles and Ecological backend NFT's, Buy, sell, discover exclusive assets and save the planet.</Text>
+        <Flex>
+        <Button>Explore</Button>
+        <Button>Create</Button>
+        </Flex>
+        
+        </Flex>
+        
+     
+    </Flex> 
     <Flex h="10vh" bgColor="red" color="white">
       Footer</Flex>          
   </>
