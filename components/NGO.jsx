@@ -11,7 +11,7 @@ import {
   Box
 } from "@chakra-ui/react";
 import React from "react";
-import "@google/model-viewer";
+// import "@google/model-viewer";
 import Header from "./Header";
 
 export default function NGO({user}) {
@@ -86,14 +86,14 @@ export default function NGO({user}) {
             w="20vh"
             ml="10"
           >
-            <model-viewer
+            {/* <model-viewer
               src="katreena.glb"
               alt="arbol"
               ar
               shadow-intensity="1"
               camera-controls
               touch-action="pan-y"
-            />
+            /> */}
           </Flex>
         </Container>
       </Flex>
