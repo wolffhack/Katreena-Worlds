@@ -8,21 +8,30 @@ export default function AuthPage({metamaskAuth}) {
     return (
     <>
       <Head>
-      <title>Login / K3na</title>
+      <title>Login / K3na/ documentation
+
+      </title>
       </Head>
+      <Flex>
+        <link>Home</link>
+        <link>Home</link>
+        <link>Home</link>
+        <link>Home</link>
+        <link>Home</link>
+      </Flex>
       <Flex 
       direction="column" 
       justifyContent="center" 
       alignItems="center"
       width="100vw"
       height="100vh"
-      bgGradient="Linear(to-br, teal.400, purple)"
+      bgColor="black"
       >
           <Text 
               fontSize="5xl" 
               fontWeight="bold"
               color="white"
-          >Katreena World</Text>
+          >Katreena Lands</Text>
           <Button 
               color="white" 
               bgColor="#05cd3e"
