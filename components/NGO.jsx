@@ -14,19 +14,12 @@ import "@google/model-viewer";
 
 export default function NGO() {
   return (
-    <Flex
-      h="100%"
-      color="white"
-      align="center"
-      justify="center"
-   
-    >
+    <Flex h="100%" color="white" align="center" justify="center">
       <Flex direction="column" m="2" w="50%">
         <Flex
           justify="center"
           alignItems="center"
           h="15vh"
-   
           borderBottomRadius="10"
           direction="column"
           w="100%"
@@ -91,8 +84,6 @@ export default function NGO() {
               src="katreena.glb"
               alt="arbol"
               ar
-             
-              poster="shared-assets/models/NeilArmstrong.webp"
               shadow-intensity="1"
               camera-controls
               touch-action="pan-y"

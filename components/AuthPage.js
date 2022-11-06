@@ -53,14 +53,14 @@ export default function AuthPage({ metamaskAuth }) {
       </Flex>
       <Flex h="90vh" color="white" textAlign="center">
         <Container>
-          <model-viewer
+          {/* <model-viewer
             src="katreena.glb"
             ios-src=""
             alt="A 3D model of an astronaut"
             shadow-intensity="1"
             camera-controls
             auto-rotate
-          ></model-viewer>
+          ></model-viewer> */}
         </Container>
 
         <Flex h="100%" align="center" justify="center" direction="column">
