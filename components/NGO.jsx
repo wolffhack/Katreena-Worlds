@@ -19,7 +19,7 @@ export default function NGO() {
       color="white"
       align="center"
       justify="center"
-      bgGradient="Linear(to-br, #5d2080, #3a154f)" 
+   
     >
       <Flex direction="column" m="2" w="50%">
         <Flex
