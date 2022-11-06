@@ -62,7 +62,9 @@ export default function Home() {
             color="#05cd3e" 
             borderColor="white"
             align="center" 
-            variant="enclosed" 
+            variant="soft-rounded" 
+            isFitted="true"
+            colorScheme = "purple"
           >
             <TabList>
               <Tab fontWeight="bold">Profile</Tab>

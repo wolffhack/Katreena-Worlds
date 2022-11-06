@@ -1,5 +1,4 @@
 import { Button, FormControl, FormLabel, Input, Text } from "@chakra-ui/react";
-// import Link from "next/link";
 import { Link } from '@chakra-ui/react'
 import { useState } from "react";
 import { useMoralis } from "react-moralis";
