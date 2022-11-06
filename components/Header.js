@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Center, Text, Button, Image } from "@chakra-ui/react";
+import { Flex, Center, Text, Button, Image, Link } from "@chakra-ui/react";
 
 export default function Header({ user, logout, isLoggingOut }) {
   // const navigate = useNavigate();
@@ -31,6 +31,12 @@ export default function Header({ user, logout, isLoggingOut }) {
             
           
         </Center>
+        <Flex justify="space-between">
+          <Link>NGO Profile</Link>
+          <Link>Mint Katree</Link>
+          <Link>Market Place</Link>
+          <Link>Merch</Link>
+        </Flex>
         <Center>
           <Text>{user.getUsername()}</Text>
           <Button ml="4" bg="#05cd3e" onClick={logout} disabled={isLoggingOut}>

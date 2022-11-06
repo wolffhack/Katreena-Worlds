@@ -9,7 +9,7 @@ import NFT from "../components/NFT";
 import Send from "../components/Send";
 import MintNFT from "../components/MintNFT";
 import AuthPage from "../components/AuthPage";
-// import NGO from "../components/NGO";
+import NGO from "../components/NGO";
 
 
 export default function Home() {
@@ -56,8 +56,10 @@ export default function Home() {
           bgGradient="Linear(to-br, #5d2080, #3a154f)" 
           px="44" 
           py="20"
+          
         >
-          <Tabs 
+          <NGO user={user} ></NGO>
+          {/* <Tabs 
             size="lg" 
             colorScheme="purple" 
             color="#05cd3e" 
@@ -65,7 +67,7 @@ export default function Home() {
             align="center" 
             variant="soft-rounded" 
             isFitted="true"
-            // colorScheme = "purple"
+            
           >
             <TabList>
               <Tab fontWeight="bold">Profile</Tab>
@@ -78,7 +80,7 @@ export default function Home() {
             <TabPanels p='2rem'>
               <TabPanel>
                 <Profile user={user}/>
-                {/* <NGO></NGO> */}
+                
               </TabPanel>
               <TabPanel>
                 <Balance user={user}/>
@@ -96,7 +98,7 @@ export default function Home() {
                 <MintNFT user={user}/>
               </TabPanel>
             </TabPanels>
-          </Tabs>
+          </Tabs> */}
         </Box>
       </Flex>
     </>

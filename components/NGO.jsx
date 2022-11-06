@@ -8,14 +8,18 @@ import {
   FormControl,
   Input,
   Center,
+  Box
 } from "@chakra-ui/react";
 import React from "react";
 import "@google/model-viewer";
+import Header from "./Header";
 
-export default function NGO() {
+export default function NGO({user}) {
   return (
+    <Box>
+      {/* <Header></Header> */}
     <Flex h="100%" color="white" align="center" justify="center">
-      <Flex direction="column" m="2" w="50%">
+      <Flex direction="column" m="2" w="50%" h="100%">
         <Flex
           justify="center"
           alignItems="center"
@@ -39,7 +43,7 @@ export default function NGO() {
           <Flex
             justify="center"
             alignItems="center"
-            h="30vh"
+            h="100%"
             bgColor="Black"
             borderRadius="10"
             direction="column"
@@ -55,7 +59,7 @@ export default function NGO() {
               alt="save the Planet"
               p="8px"
             />
-            <Button m="3" color="black" bgColor="green">
+            <Button m="3" color="black" bgColor="green" w="95%" h="1.5rem">
               Upload Photo
             </Button>
             <Button
@@ -63,6 +67,8 @@ export default function NGO() {
               bgColor="black"
               borderColor="white"
               border="1px"
+              w="95%"
+              h="1.5rem"
             >
               Delete
             </Button>
@@ -112,5 +118,6 @@ export default function NGO() {
         </form>
       </Container>
     </Flex>
+    </Box>
   );
 }
