@@ -58,13 +58,16 @@ export default function AuthPage({metamaskAuth}) {
   ></model-viewer>     */}
         </Container >
         
-        <Flex h="100%" align="center" justify="center" direction="column" bgColor="red">
+        <Flex h="100%" align="center" justify="center" direction="column" >
+          <Container bgColor="red">
         <Heading>Discover the unique digital art of 3D AR NFT's</Heading>
         <Text>Digital marketplace for crypto collectibles and Ecological backend NFT's, Buy, sell, discover exclusive assets and save the planet.</Text>
         <Flex>
         <Button>Explore</Button>
         <Button>Create</Button>
+       
         </Flex>
+        </Container>
         
         </Flex>
         
