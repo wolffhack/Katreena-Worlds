@@ -1,16 +1,16 @@
 import {
   Flex,
   Heading,
-  Grid,
   Link,
   Container,
   Image,
   Button,
   FormControl,
   Input,
-  Box,
   Center,
 } from "@chakra-ui/react";
+import React from "react";
+import modelViewer from "@google/model-viewer";
 
 export default function NGO() {
   return (
@@ -22,28 +22,25 @@ export default function NGO() {
       bgColor="orange"
     >
       <Flex direction="column" bgColor="blue" m="2" w="50%">
-        <Container>
-          <Flex
-            justify="center"
-            alignItems="center"
-            h="15vh"
-       
-            bgColor="green"
-            borderBottomRadius="10"
-            direction="column"
-            w="40vh"
-          >
-            <Center>
-              <Flex direction="column">
-                <Heading>NGO Profile registrer</Heading>
-                <Flex justify="space-around">
-                  <Link href="#">Home</Link>
-                  <Link>Edit Profile</Link>
-                </Flex>
+        <Flex
+          justify="center"
+          alignItems="center"
+          h="15vh"
+          bgColor="green"
+          borderBottomRadius="10"
+          direction="column"
+          w="100%"
+        >
+          <Center>
+            <Flex direction="column">
+              <Heading>NGO Profile registrer</Heading>
+              <Flex justify="space-around">
+                <Link href="#">Home</Link>
+                <Link>Edit Profile</Link>
               </Flex>
-            </Center>
-          </Flex>
-        </Container>
+            </Flex>
+          </Center>
+        </Flex>
 
         <Container>
           <Flex
@@ -51,10 +48,12 @@ export default function NGO() {
             alignItems="center"
             h="30vh"
             bgColor="Black"
-            borderTopRadius="10"
+            borderRadius="10"
             direction="column"
             w="20vh"
-            mt="10" mb="10" ml="10"
+            mt="10"
+            mb="10"
+            ml="10"
           >
             <Image
               src="savePlanet.jpg"
@@ -83,18 +82,23 @@ export default function NGO() {
             h="15vh"
             mb="10"
             bgColor="Black"
-            borderBottomRadius="10"
+            borderRadius="10"
             direction="column"
             w="20vh"
             ml="10"
           >
-            model viewer
+            <modelViewer src=""/>
           </Flex>
         </Container>
       </Flex>
 
-      <Container bgColor="black" h="100%" alignContent="center">
-        <Image src="savePlanet.jpg" />
+      <Container
+        bgColor="black"
+        h="100%"
+        alignContent="center"
+        borderRadius="10px"
+      >
+        <Image src="savePlanet.jpg" m="5" boxSize="250px" />
         <Heading>Personal Information</Heading>
         <form>
           <FormControl>
